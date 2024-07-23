@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import { Dropdown, Menu, Drawer, Button } from "antd";
+import { Dropdown, Menu, Drawer, Button, Carousel } from "antd";
 import {
   BsFillPhoneFill,
   BsFillEnvelopeFill,
@@ -8,9 +8,14 @@ import {
   BsRepeat,
   BsSuitHeart,
   BsCart3,
+  BsTruck,
+  BsShieldCheck,
+  BsFillBoxFill,
+  BsHeadset,
 } from "react-icons/bs";
 import "./style.scss";
 import { Input, Space } from "antd";
+import "antd/dist/reset.css";
 const { Search } = Input;
 const { SubMenu } = Menu;
 
@@ -31,8 +36,8 @@ const Header = () => {
       mode="inline"
       defaultOpenKeys={["sub1"]}
       style={{ height: "100%", borderRight: 0 }}>
-       <SubMenu key="sub1" title="Power Tools">
-       <SubMenu key="sub1-1" title="240v Power Tools">
+      <SubMenu key="sub1" title="Power Tools">
+        <SubMenu key="sub1-1" title="240v Power Tools">
           <Menu.Item key="1-1-1">
             <a href="">Angle Grinders</a>
           </Menu.Item>
@@ -94,32 +99,32 @@ const Header = () => {
         </Menu.Item>
       </SubMenu>
       <SubMenu key="sub2" title="Hand Tools">
-          <Menu.Item key="2-1">
-            <a href="">Hammers</a>
-          </Menu.Item>
-          <Menu.Item key="2-2">
-            <a href="">Hand Saws</a>
-          </Menu.Item>
-          <Menu.Item key="2-3">
-            <a href="">Measuring and Inspection</a>
-          </Menu.Item>
-          <Menu.Item key="2-4">
-            <a href="">Pliers & Cutters</a>
-          </Menu.Item>
-          <Menu.Item key="2-5">
-            <a href="">Screwdrivers</a>
-          </Menu.Item>
+        <Menu.Item key="2-1">
+          <a href="">Hammers</a>
+        </Menu.Item>
+        <Menu.Item key="2-2">
+          <a href="">Hand Saws</a>
+        </Menu.Item>
+        <Menu.Item key="2-3">
+          <a href="">Measuring and Inspection</a>
+        </Menu.Item>
+        <Menu.Item key="2-4">
+          <a href="">Pliers & Cutters</a>
+        </Menu.Item>
+        <Menu.Item key="2-5">
+          <a href="">Screwdrivers</a>
+        </Menu.Item>
       </SubMenu>
       <SubMenu key="sub3" title="Safety Workwear">
-          <Menu.Item key="3-1">
-            <a href="">Automotive</a>
-          </Menu.Item>
-          <Menu.Item key="3-2">
-            <a href="">Contractors Equipment</a>
-          </Menu.Item>
-          <Menu.Item key="3-3">
-            <a href="">Ladders & Platforms</a>
-          </Menu.Item>
+        <Menu.Item key="3-1">
+          <a href="">Automotive</a>
+        </Menu.Item>
+        <Menu.Item key="3-2">
+          <a href="">Contractors Equipment</a>
+        </Menu.Item>
+        <Menu.Item key="3-3">
+          <a href="">Ladders & Platforms</a>
+        </Menu.Item>
       </SubMenu>
       <Menu.Item key="4">
         <a href="/addresses">Abrasives</a>
@@ -176,6 +181,20 @@ const Header = () => {
       </Menu.Item>
       <Menu.Item key="2">
         <a href="/logout">Logout</a>
+      </Menu.Item>
+    </Menu>
+  );
+
+  const blogMenu = (
+    <Menu>
+      <Menu.Item key="0">
+        <a href="/blog/news">Blog Left Sidebar</a>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <a href="/blog/tutorials">Blog Right Sidebar</a>
+      </Menu.Item>
+      <Menu.Item key="2">
+        <a href="/blog/reviews">Blog Without Sidebar</a>
       </Menu.Item>
     </Menu>
   );
@@ -246,14 +265,198 @@ const Header = () => {
             <ul>
               <li className="header__icon">
                 <BsRepeat />
+                <span className="notification-badge">5</span>
               </li>
               <li className="header__icon">
                 <BsSuitHeart />
+                <span className="notification-badge">3</span>
               </li>
               <li className="header__icon">
                 <BsCart3 />
+                <span className="notification-badge">1</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="box_tittle">
+        <div className="container_tittle">
+          <div className="row">
+            <div className="col-xl-3 header__top_left">
+              <Dropdown
+                overlay={drawerMenu}
+                trigger={["click"]}
+                placement="bottomLeft">
+                <Button style={{ marginLeft: "10px" }}>
+                  <BsList />
+                  <span style={{ marginLeft: "8px" }}>SHOP BY CATEGORY </span>
+                </Button>
+              </Dropdown>
+            </div>
+            <div className="col-xl-6 header__top_center">
+              <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>
+                  <Dropdown overlay={blogMenu} trigger={["hover"]}>
+                    <span style={{ cursor: "pointer" }}>Blog</span>
+                  </Dropdown>
+                </li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div className="col-xl-3 header__top_right">
+              <Button className="btn_order" style={{ marginLeft: "10px" }}>
+                <span style={{ marginLeft: "8px" }}>FREE ON ORDER $50+ </span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel">
+        <div className="container">
+          <div className="row h-100">
+            <div className="col-xl-7 left-content">
+              <Carousel autoplay>
+                <div className="carousel-item item-1">
+                  <div className="left-content-inner">
+                    <div className="text-content">
+                      <p className="slogan">ALL THE PART YOU NEED</p>
+                      <span className="tittle">SPECIAL OFFER</span>
+                      <h1>ON POWER TOOL</h1>
+                      <div className="text-container">
+                        <span className="percentage">30%</span>
+                        <span className="label">off</span>
+                      </div>
+                      <button className="button_buy">Shop Now</button>
+                    </div>
+                    <div className="image-content">
+                      <img
+                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-1.png"
+                        alt="Page 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item item-2">
+                  <div className="left-content-inner">
+                    <div className="text-content">
+                      <p className="slogan">ALL THE PART YOU NEED</p>
+                      <span className="tittle">FATMAX J7CS</span>
+                      <h1>JUMP STARTER</h1>
+                      <div className="text-container">
+                        <span className="percentage">50%</span>
+                        <span className="label">off</span>
+                      </div>
+                      <button className="button_buy">Shop Now</button>
+                    </div>
+                    <div className="image-content">
+                      <img
+                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-2.png"
+                        alt="Page 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item item-3">
+                  <div className="left-content-inner">
+                    <div className="text-content">
+                      <p className="slogan">ALL THE PART YOU NEED</p>
+                      <span className="tittle">33-POCKET 16 IN</span>
+                      <h1>BIG TOOL BAG</h1>
+                      <div className="text-container">
+                        <span className="percentage">25%</span>
+                        <span className="label">off</span>
+                      </div>
+                      <button className="button_buy">Shop Now</button>
+                    </div>
+                    <div className="image-content">
+                      <img
+                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-3.png"
+                        alt="Page 3"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Carousel>
+            </div>
+            <div className="col-xl-5 right-column">
+              <div className="row h-100">
+                <div className="col-12 right-top">
+                  <div className="image-content">
+                    <img
+                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-1.jpg"
+                      alt="Page 4"
+                    />
+                    <div className="text-overlay-container">
+                      <div className="text-overlay">$29.99 ONLY</div>
+                      <div className="text-overlay">BOSCH</div>
+                      <div className="text-overlay">MINI DRILL</div>
+                      <div className="text-overlay">
+                        <a href="#">Show Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 right-bottom">
+                  <div className="image-content">
+                    <img
+                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-2.jpg"
+                      alt="Page 5"
+                    />
+                    <div className="text-overlay-container">
+                      <div className="text-overlay">START FROM $9.99</div>
+                      <div className="text-overlay">BRAND</div>
+                      <div className="text-overlay">HAND TOOLS</div>
+                      <div className="text-overlay">
+                        <a href="#">Show Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container container_note">
+        <div className="row">
+          <div className="col-xl-3 separator">
+            <div className="content">
+              <div className="icon"><BsTruck /></div>
+              <div className="text">
+                <div className="lineB">Easy Free Delivery</div>
+                <div className="line">Order On $100*</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 separator">
+            <div className="content">
+              <div className="icon"><BsShieldCheck /></div>
+              <div className="text">
+                <div className="lineB">Premium Warranty</div>
+                <div className="line">Up to 2 Year</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 separator">
+            <div className="content">
+              <div className="icon"><BsFillBoxFill /></div>
+              <div className="text">
+                <div className="lineB">Easy Free Return</div>
+                <div className="line">365 Days Return</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 separator">
+            <div className="content">
+              <div className="icon"><BsHeadset /></div>
+              <div className="text">
+                <div className="lineB">24*7 Online Support</div>
+                <div className="line">Premium Service</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
