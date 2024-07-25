@@ -28,7 +28,7 @@
     a {
       font-size: 14px;
       display: inline-block;
-      color: map.get($theme-colors, "main");
+      color: #df5b0c;
     }
     span {
       cursor: pointer;
@@ -53,7 +53,7 @@
     a {
       font-size: 14px;
       display: inline-block;
-      color: map.get($theme-colors, "main");
+      color: #df5b0c;
     }
     span {
       cursor: pointer;
@@ -62,33 +62,33 @@
 }
 
 .header__icon {
-  position: relative; /* Đặt relative để badge có thể định vị chính xác */
+  position: relative;
   display: inline-block;
-  font-size: 24px; /* Kích thước icon */
-  margin: 0 10px; /* Khoảng cách giữa các icon */
+  font-size: 24px;
+  margin: 0 10px;
 }
 
 .notification-badge {
   position: absolute;
-  top: -10px; /* Điều chỉnh vị trí trên cùng của badge */
-  right: -20px; /* Điều chỉnh vị trí bên phải của badge */
-  background-color: red; /* Màu nền của badge */
-  color: white; /* Màu chữ của badge */
-  border-radius: 50%; /* Bo tròn thành hình tròn */
-  padding: 2px 6px; /* Khoảng cách bên trong của badge */
-  font-size: 12px; /* Kích thước chữ của badge */
-  font-weight: bold; /* Chữ đậm */
-  z-index: 1; /* Đảm bảo badge nằm trên icon */
-  border: 1px solid white; /* Viền trắng của badge */
+  top: -10px;
+  right: -20px;
+  background-color: #e05e08;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+  border: 1px solid fff;
 }
 .custom-search .ant-btn {
   border-radius: 0 4px 4px 0 !important;
-  background-color: map.get($theme-colors, "main") !important;
+  background: #df5b0c !important;
   color: #fff !important;
 }
 
 .box_tittle {
-  background: map.get($theme-colors, "main");
+  background: #df5b0c;
   width: 100%;
 }
 .container_tittle {
@@ -100,249 +100,20 @@
   border: 1px solid #ccc;
 }
 
+.container_intro {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .btn_order {
-  color: #000; /* Màu chữ ban đầu */
-  background: #fed900; /* Màu nền ban đầu */
-  border: 1px solid #fed900; /* Viền ban đầu */
+  color: #000;
+  background: #fed900;
+  border: 1px solid #fed900;
 
   &:hover {
-    color: #fff !important; /* Màu chữ khi hover */
-    background: #000 !important; /* Màu nền khi hover */
-    border: 1px solid #000 !important; /* Viền khi hover */
+    color: #fff !important;
+    background: #000 !important;
+    border: 1px solid #000 !important;
   }
-}
-.carousel {
-  padding: 20px;
-}
-
-.carousel-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 520px; /* Chiều cao cố định cho mỗi trang carousel */
-}
-
-.carousel-item.item-1 {
-  background-color: #f3f4f6; /* Màu nền cho trang 1 */
-}
-
-.carousel-item.item-2 {
-  background-color: #fdf5e0; /* Màu nền cho trang 2 */
-}
-
-.carousel-item.item-3 {
-  background-color: #dff1fb; /* Màu nền cho trang 3 */
-}
-
-.row.h-100 {
-  height: 100vh; /* Chiều cao bằng viewport height */
-  display: flex;
-  padding-left: 10px;
-}
-
-.left-content {
-  display: flex;
-  flex-direction: column; /* Sử dụng flex-direction column để chia phần nội dung */
-  flex: 7; /* Điều chỉnh tỷ lệ chiều rộng */
-}
-
-.left-content-inner {
-  display: flex;
-  height: 100%; /* Đảm bảo chiều cao bằng chiều cao của phần chứa */
-}
-
-.text-content {
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-}
-
-.image-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
-}
-
-.image-content img {
-  max-width: 100%; /* Hình ảnh sẽ chiếm toàn bộ chiều rộng của phần chứa */
-  max-height: 100%; /* Hình ảnh sẽ chiếm toàn bộ chiều cao của phần chứa nếu có */
-  object-fit: cover; /* Đảm bảo hình ảnh fit vào phần chứa mà không bị biến dạng */
-}
-
-.percentage {
-  color: rgb(255, 204, 0);
-  line-height: 90px;
-  letter-spacing: -1px;
-  font-weight: 800;
-  font-size: 90px;
-  margin-right: 8px;
-}
-
-.label {
-  font-size: 40px;
-  font-style: bold;
-}
-
-.slogan {
-  line-height: 25px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.tittle {
-  line-height: 40px;
-  letter-spacing: -1px;
-  font-weight: 900;
-  font-size: 40px;
-  margin-right: 8px;
-}
-
-.button_buy {
-  background-color: rgb(224, 92, 11);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  line-height: 20px;
-  letter-spacing: 0px;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 20px; /* Khoảng cách bên trong nút */
-  border: none;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  flex: 5;
-  height: 340px; /* Chiều cao cố định cho phần tử bên phải */
-}
-
-.right-top,
-.right-bottom {
-  flex: 1; /* Chia đều chiều cao cho hai phần tử con */
-  display: flex;
-  margin: 0 0 10px 0;
-  align-items: center;
-  justify-content: center;
-  position: relative; /* Cho phép đặt chữ lên trên ảnh */
-}
-
-.right-top .image-content,
-.right-bottom .image-content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
-  justify-content: space-around; /* Khoảng cách đều giữa các phần tử con */
-}
-
-.right-top .image-content img,
-.right-bottom .image-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.text-overlay-container {
-  position: absolute; /* Để overlay nằm trên ảnh */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.text-overlay {
-  position: absolute;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: left;
-  z-index: 1; /* Đảm bảo text overlay nằm trên cùng */
-  padding: 5px;
-  width: 100%;
-  left: 5%;
-}
-
-.text-overlay a {
-  color: #df5b0c;
-}
-
-.text-overlay:nth-child(1) {
-  top: 10%;
-  color: #df5b0c;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.text-overlay:nth-child(2) {
-  top: 30%;
-  color: #000;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.text-overlay:nth-child(3) {
-  top: 45%;
-  color: #000;
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.text-overlay:nth-child(4) {
-  top: 60%;
-}
-
-.container_note .row {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 0;
-}
-
-.separator {
-  border-right: 1px solid #ccc; /* Đường phân cách giữa các cột */
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.separator:last-child {
-  border-right: none; /* Loại bỏ đường phân cách cho cột cuối cùng */
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon {
-  font-size: 24px; /* Kích thước biểu tượng */
-  margin-right: 10px;
-  color: #df5b0c; /* Khoảng cách giữa biểu tượng và văn bản */
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-}
-
-.line {
-  margin: 0;
-}
-
-.lineB {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0.4px;
 }

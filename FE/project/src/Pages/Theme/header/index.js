@@ -1,4 +1,7 @@
+import "./style.scss";
 import React, { memo, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Dropdown, Menu, Drawer, Button, Carousel } from "antd";
 import {
   BsFillPhoneFill,
@@ -8,13 +11,8 @@ import {
   BsRepeat,
   BsSuitHeart,
   BsCart3,
-  BsTruck,
-  BsShieldCheck,
-  BsFillBoxFill,
-  BsHeadset,
 } from "react-icons/bs";
-import "./style.scss";
-import { Input, Space } from "antd";
+import { Input } from "antd";
 import "antd/dist/reset.css";
 const { Search } = Input;
 const { SubMenu } = Menu;
@@ -310,152 +308,6 @@ const Header = () => {
               <Button className="btn_order" style={{ marginLeft: "10px" }}>
                 <span style={{ marginLeft: "8px" }}>FREE ON ORDER $50+ </span>
               </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="carousel">
-        <div className="container">
-          <div className="row h-100">
-            <div className="col-xl-7 left-content">
-              <Carousel autoplay>
-                <div className="carousel-item item-1">
-                  <div className="left-content-inner">
-                    <div className="text-content">
-                      <p className="slogan">ALL THE PART YOU NEED</p>
-                      <span className="tittle">SPECIAL OFFER</span>
-                      <h1>ON POWER TOOL</h1>
-                      <div className="text-container">
-                        <span className="percentage">30%</span>
-                        <span className="label">off</span>
-                      </div>
-                      <button className="button_buy">Shop Now</button>
-                    </div>
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-1.png"
-                        alt="Page 1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item item-2">
-                  <div className="left-content-inner">
-                    <div className="text-content">
-                      <p className="slogan">ALL THE PART YOU NEED</p>
-                      <span className="tittle">FATMAX J7CS</span>
-                      <h1>JUMP STARTER</h1>
-                      <div className="text-container">
-                        <span className="percentage">50%</span>
-                        <span className="label">off</span>
-                      </div>
-                      <button className="button_buy">Shop Now</button>
-                    </div>
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-2.png"
-                        alt="Page 2"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item item-3">
-                  <div className="left-content-inner">
-                    <div className="text-content">
-                      <p className="slogan">ALL THE PART YOU NEED</p>
-                      <span className="tittle">33-POCKET 16 IN</span>
-                      <h1>BIG TOOL BAG</h1>
-                      <div className="text-container">
-                        <span className="percentage">25%</span>
-                        <span className="label">off</span>
-                      </div>
-                      <button className="button_buy">Shop Now</button>
-                    </div>
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-3.png"
-                        alt="Page 3"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </Carousel>
-            </div>
-            <div className="col-xl-5 right-column">
-              <div className="row h-100">
-                <div className="col-12 right-top">
-                  <div className="image-content">
-                    <img
-                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-1.jpg"
-                      alt="Page 4"
-                    />
-                    <div className="text-overlay-container">
-                      <div className="text-overlay">$29.99 ONLY</div>
-                      <div className="text-overlay">BOSCH</div>
-                      <div className="text-overlay">MINI DRILL</div>
-                      <div className="text-overlay">
-                        <a href="#">Show Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 right-bottom">
-                  <div className="image-content">
-                    <img
-                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-2.jpg"
-                      alt="Page 5"
-                    />
-                    <div className="text-overlay-container">
-                      <div className="text-overlay">START FROM $9.99</div>
-                      <div className="text-overlay">BRAND</div>
-                      <div className="text-overlay">HAND TOOLS</div>
-                      <div className="text-overlay">
-                        <a href="#">Show Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container container_note">
-        <div className="row">
-          <div className="col-xl-3 separator">
-            <div className="content">
-              <div className="icon"><BsTruck /></div>
-              <div className="text">
-                <div className="lineB">Easy Free Delivery</div>
-                <div className="line">Order On $100*</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 separator">
-            <div className="content">
-              <div className="icon"><BsShieldCheck /></div>
-              <div className="text">
-                <div className="lineB">Premium Warranty</div>
-                <div className="line">Up to 2 Year</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 separator">
-            <div className="content">
-              <div className="icon"><BsFillBoxFill /></div>
-              <div className="text">
-                <div className="lineB">Easy Free Return</div>
-                <div className="line">365 Days Return</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 separator">
-            <div className="content">
-              <div className="icon"><BsHeadset /></div>
-              <div className="text">
-                <div className="lineB">24*7 Online Support</div>
-                <div className="line">Premium Service</div>
-              </div>
             </div>
           </div>
         </div>

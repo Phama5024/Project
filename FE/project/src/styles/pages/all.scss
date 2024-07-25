@@ -27,6 +27,12 @@ body{
     flex-wrap: wrap;
 }
 
+.col {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+
 .col-6{
     flex: 0 0 50%;
     max-width: 50%;
