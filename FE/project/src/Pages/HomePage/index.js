@@ -31,6 +31,24 @@ const HomePage = () => {
     arrows: true,
   };
 
+  const newsAdd = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+  const imgAdd = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
   const featureProducts = [
     {
       id: 1,
@@ -164,51 +182,51 @@ const HomePage = () => {
       price: "$120.00",
     },
     {
-        id: 9,
-        img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-9.jpg",
-        imgHover:
-          "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-9.jpg",
-        name: "Rapid PRO PB131 Pneumatic Nailer Tools Only",
-        price: "$122.00",
-      },
-      {
-        id: 10,
-        img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-2.jpg",
-        imgHover:
-          "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-3-700x700.jpg",
-        name: "Milwaukee Gauge Angled Finishing Nailer 18V Fuel 16",
-        price: "$110.00",
-      },
+      id: 9,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-9.jpg",
+      imgHover:
+        "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-9.jpg",
+      name: "Rapid PRO PB131 Pneumatic Nailer Tools Only",
+      price: "$122.00",
+    },
+    {
+      id: 10,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-2.jpg",
+      imgHover:
+        "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-3-700x700.jpg",
+      name: "Milwaukee Gauge Angled Finishing Nailer 18V Fuel 16",
+      price: "$110.00",
+    },
   ];
 
   const addProducts = [
     {
       id: 1,
-      img: 'https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-13.jpg',
-      name: 'Paslode Impulse Framing Nailer IM900 MACH45TT34',
-      price: '$130.00 – $190.00',
-      discount: '32%'
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-13.jpg",
+      name: "Paslode Impulse Framing Nailer IM900 MACH45TT34",
+      price: "$130.00 – $190.00",
+      discount: "32%",
     },
     {
       id: 2,
-      img: 'https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-17.jpg',
-      name: 'DeWalt DDVG512 Brushless XR Circular Saw Range',
-      price: '$300.00',
-      discount: '25%'
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-17.jpg",
+      name: "DeWalt DDVG512 Brushless XR Circular Saw Range",
+      price: "$300.00",
+      discount: "25%",
     },
     {
       id: 3,
-      img: 'https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-16.jpg',
-      name: 'BOSCH Brute Breaker Hammer BH2760VC 150-Volt',
-      price: '$400.00',
-      discount: '20%'
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-16.jpg",
+      name: "BOSCH Brute Breaker Hammer BH2760VC 150-Volt",
+      price: "$400.00",
+      discount: "20%",
     },
     {
-        id: 4,
-        img: 'https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-14.jpg',
-        name: 'DeWalt Oil-Lube Hand Carry Air Compressor',
-        price: '$250.00 – $300.00',
-        discount: '17%'
+      id: 4,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-14.jpg",
+      name: "DeWalt Oil-Lube Hand Carry Air Compressor",
+      price: "$250.00 – $300.00",
+      discount: "17%",
     },
   ];
 
@@ -278,23 +296,110 @@ const HomePage = () => {
       price: "$180.00",
     },
     {
-        id: 9,
-        img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-11.jpg",
-        imgHover:
-          "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-11.jpg",
-        name: "Black and Decker BDROUT127-B5 1600W Router",
-        price: "$200.00",
-      },
-      {
-        id: 10,
-        img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-6.jpg",
-        imgHover:
-          "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-6-700x700.jpg",
-        name: "BLACK DECKER Max Lithium Cordless Circular Saw",
-        price: "$120.00",
-      },
+      id: 9,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-11.jpg",
+      imgHover:
+        "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-11.jpg",
+      name: "Black and Decker BDROUT127-B5 1600W Router",
+      price: "$200.00",
+    },
+    {
+      id: 10,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a1-6.jpg",
+      imgHover:
+        "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2019/01/a2-6-700x700.jpg",
+      name: "BLACK DECKER Max Lithium Cordless Circular Saw",
+      price: "$120.00",
+    },
   ];
-  
+
+  const reviews = [
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/client_01.jpg",
+      name: "Allie Grater",
+      feedback: "Desginer",
+    },
+    {
+      text: "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.",
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/client_02.jpg",
+      name: "John Doe",
+      feedback: "Tools Expert",
+    },
+    {
+      text: "There are many variations of passages of Lorem Ipsum availble, but the majority have suffered alteration in some form.",
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/client_03.jpg",
+      name: "Rose Bush",
+      feedback: "Engineer",
+    },
+    {
+      text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/client_04.jpg",
+      name: "Percy Kewshun",
+      feedback: "Architech",
+    },
+    {
+      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/client_05.jpg",
+      name: "Fay Daway",
+      feedback: "Technician",
+    },
+  ];
+
+  const images = [
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-01.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-02.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-03.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-04.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-05.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-06.png",
+    "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/brand-07.png",
+  ];
+
+  const news = [
+    {
+      id: 1,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/01-2.jpg",
+      name: "Nullam ullamcorper nisl quis ornare molestie saepe eveniet",
+      date: "By Justin | 06 June, 2023",
+    },
+    {
+      id: 2,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/02-2.jpg",
+      name: "Morbi condimentum molestie Nam enim odio sodales",
+      date: "By Justin | 02 June, 2023",
+    },
+    {
+      id: 3,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/03-1.jpg",
+      name: "Nemo enim ipsam voluptatem quia voluptas ssit aspernatur aut",
+      date: "By Justin | 02 June, 2023",
+    },
+    {
+      id: 4,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/06/04-2.jpg",
+      name: "Urna pretium elit mauris cursus Curbitur at elit Vestibulum",
+      date: "By Justin | 01 June, 2023",
+    },
+    {
+      id: 5,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/05/05.jpg",
+      name: "The Ultimate cursus vestibulum at interdum Vivamus",
+      date: "By Justin | 12 May, 2023",
+    },
+    {
+      id: 6,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/04/06.jpg",
+      name: "Turpis at eleifend ps mi elit Aenean porta ac sed faucibus",
+      date: "By Justin | 12 April, 2023",
+    },
+    {
+      id: 7,
+      img: "https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/04/07.jpg",
+      name: "Unleashing At risus pretium urna tortor metus fringilla",
+      date: "By Justin | 12 April, 2023",
+    },
+  ];
 
   return (
     <>
@@ -686,7 +791,8 @@ const HomePage = () => {
           <div className="container_intro">
             <div className="first_intro">New Products</div>
             <div className="second_intro">
-            Check out our collection of the top New Products that encourage conversion.
+              Check out our collection of the top New Products that encourage
+              conversion.
             </div>
           </div>
         </div>
@@ -716,105 +822,111 @@ const HomePage = () => {
         </div>
       </div>
       <div className="container">
-      <div className="row">
-        <div className="image-container-column">
-          <img src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/sub-banner-1.jpg" alt="Banner" />
-          <div className="overlay-text">
-            <div className="text-left">TOOLS</div>
-            <div className="text-right">
-              <div className="text-right-first">$20 GIFT BONUS</div>
-              <div className="text-right-second">SPECIAL OFFER FOR TODAY ONLY</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="container container-deal">
-      <div className="row">
-        <div className="container_intro">
-          <div className="first_intro">Featured Products</div>
-          <div className="second_intro">
-            Check out our collection of the top Featured Products that
-            encourage conversion.
-          </div>
-        </div>
-      </div>
-      <div className="carousel-container">
-        <Slider {...settingsAdd}>
-        {addProducts.map((addProducts, index) => (
-            <div key={addProducts.id} className="card-container">
-              <div className="card-deal">
-              <div className="discount-badge">
-                  {addProducts.discount}
-                </div>
-                <div className="left-content-deal">
-                  <img
-                    src={addProducts.img}
-                    alt={addProducts.name}
-                    className="default-img"
-                  />
-                </div>
-                <div className="right-content-deal">
-                  <div className="product-name">{addProducts.name}</div>
-                  <div className="star">☆☆☆☆☆</div>
-                  <div className="price">{addProducts.price}</div>
-                  <button className="btn_card">SELECT OPTION</button>
+        <div className="row">
+          <div className="image-container-column">
+            <img
+              src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/sub-banner-1.jpg"
+              alt="Banner"
+            />
+            <div className="overlay-text">
+              <div className="text-left">TOOLS</div>
+              <div className="text-right">
+                <div className="text-right-first">$20 GIFT BONUS</div>
+                <div className="text-right-second">
+                  SPECIAL OFFER FOR TODAY ONLY
                 </div>
               </div>
-              {index < addProducts.length - 1 && (
-                <div className="separator-deal"></div>
-              )}
             </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-    <div className="container">
-  <div className="row">
-    <div className="image-content">
-      <img
-        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-3.jpg"
-        alt="Image 1"
-      />
-      <div className="text-overlay-container-product">
-        <div className="text-overlay-product text-prices">
-        START FROM $129
-        </div>
-        <div className="text-overlay-product text-brands">HOME DEPOT</div>
-        <div className="text-overlay-product text-products">
-        POWER TOOLS
-        </div>
-        <div className="text-overlay-products">
-          <a href="#">SHOW NOW</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="image-content">
-      <img
-        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-4.jpg"
-        alt="Image 2"
-      />
-      <div className="text-overlay-container-product">
-        <div className="text-overlay-product text-prices">
-        BIG SAVING ON
+      <div className="container container-deal">
+        <div className="row">
+          <div className="container_intro">
+            <div className="first_intro">Featured Products</div>
+            <div className="second_intro">
+              Check out our collection of the top Featured Products that
+              encourage conversion.
+            </div>
+          </div>
         </div>
-        <div className="text-overlay-product text-brands">METAL & WOOD</div>
-        <div className="text-overlay-product text-products">
-        CUTTING TOOLS
-        </div>
-        <div className="text-overlay-products">
-          <a href="#">SHOP NOW</a>
+        <div className="carousel-container">
+          <Slider {...settingsAdd}>
+            {addProducts.map((addProducts, index) => (
+              <div key={addProducts.id} className="card-container">
+                <div className="card-deal">
+                  <div className="discount-badge">{addProducts.discount}</div>
+                  <div className="left-content-deal">
+                    <img
+                      src={addProducts.img}
+                      alt={addProducts.name}
+                      className="default-img"
+                    />
+                  </div>
+                  <div className="right-content-deal">
+                    <div className="product-name">{addProducts.name}</div>
+                    <div className="star">☆☆☆☆☆</div>
+                    <div className="price">{addProducts.price}</div>
+                    <button className="btn_card">SELECT OPTION</button>
+                  </div>
+                </div>
+                {index < addProducts.length - 1 && (
+                  <div className="separator-deal"></div>
+                )}
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div className="container">
+      <div className="container">
+        <div className="row">
+          <div className="image-content">
+            <img
+              src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-3.jpg"
+              alt="Image 1"
+            />
+            <div className="text-overlay-container-product">
+              <div className="text-overlay-product text-prices">
+                START FROM $129
+              </div>
+              <div className="text-overlay-product text-brands">HOME DEPOT</div>
+              <div className="text-overlay-product text-products">
+                POWER TOOLS
+              </div>
+              <div className="text-overlay-products">
+                <a href="#">SHOW NOW</a>
+              </div>
+            </div>
+          </div>
+          <div className="image-content">
+            <img
+              src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-4.jpg"
+              alt="Image 2"
+            />
+            <div className="text-overlay-container-product">
+              <div className="text-overlay-product text-prices">
+                BIG SAVING ON
+              </div>
+              <div className="text-overlay-product text-brands">
+                METAL & WOOD
+              </div>
+              <div className="text-overlay-product text-products">
+                CUTTING TOOLS
+              </div>
+              <div className="text-overlay-products">
+                <a href="#">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
         <div className="row">
           <div className="container_intro">
             <div className="first_intro">Bestseller Products</div>
             <div className="second_intro">
-            Check out our collection of the top Bestseller Products that encourage conversion.
+              Check out our collection of the top Bestseller Products that
+              encourage conversion.
             </div>
           </div>
         </div>
@@ -838,6 +950,96 @@ const HomePage = () => {
                 <div className="stars">⭐⭐⭐⭐⭐</div>
                 <div className="price">{bestProducts.price}</div>
                 <button className="btn_card">SELECT OPTION</button>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="container_intro">
+            <div className="first_intro">See What Our Customers Says</div>
+            <div className="second_intro">
+              Check our latest reviews from customers and say your feedback.
+            </div>
+          </div>
+        </div>
+        <Slider {...settingsAdd}>
+          {reviews.map((review, index) => (
+            <div className="carousel-box">
+              <div key={index} className="carousel-item-review">
+                <div className="carousel-text-review">{review.text}</div>
+                <div className="carousel-content-review">
+                  <img src={review.img} alt={`Customer ${index + 1}`} />
+                  <div className="carousel-info-review">
+                    <div>{review.name}</div>
+                    <div>{review.feedback}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="image-container-column">
+            <img
+              src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/sub-banner-2.jpg"
+              alt="Banner"
+            />
+            <div className="text-overlay-container-banner">
+              <div className="text-overlay-product banner-tittle">
+                LIMITED TIME OFFER
+              </div>
+              <div className="text-overlay-product banner-brands">
+                OUTDOOR TOOLS
+              </div>
+              <div className="text-overlay-product banner-products">
+                FOR CHAIN SAW
+              </div>
+              <div className="text-overlay-banner">
+                <a href="#">SHOW NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="carousel-container">
+            <Slider {...imgAdd}>
+              {images.map((image, index) => (
+                <div key={index} className="carousel-slide">
+                  <img src={image} alt={`Slide ${index + 1}`} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="container_intro">
+            <div className="first_intro">Get Latest Update & News</div>
+            <div className="second_intro">
+            Check our latest news and events.
+            </div>
+          </div>
+        </div>
+        <div className="carousel-container">
+          <Slider {...newsAdd}>
+            {news.map((news) => (
+              <div key={news.id} className="card-new">
+                <div className="image-container-new">
+                  <img
+                    src={news.img}
+                    alt={news.name}
+                    className="default-img-new"
+                  />
+                </div>
+                <div className="new-name">{news.name}</div>
+                <div className="date-new">{news.date}</div>
               </div>
             ))}
           </Slider>

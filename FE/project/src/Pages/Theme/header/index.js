@@ -2,7 +2,7 @@ import "./style.scss";
 import React, { memo, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Dropdown, Menu, Drawer, Button, Carousel } from "antd";
+import { Dropdown, Menu, Drawer, Button} from "antd";
 import {
   BsFillPhoneFill,
   BsFillEnvelopeFill,
