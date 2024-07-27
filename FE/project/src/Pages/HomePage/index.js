@@ -407,24 +407,26 @@ const HomePage = () => {
         <div className="container">
           <div className="row h-100">
             <div className="col-xl-7 left-content">
-              <Carousel autoplay>
+              <Carousel dots={false} autoplay>
                 <div className="carousel-item item-1">
                   <div className="left-content-inner">
                     <div className="text-content">
                       <p className="slogan">ALL THE PART YOU NEED</p>
                       <span className="tittle">SPECIAL OFFER</span>
-                      <h1>ON POWER TOOL</h1>
+                      <h3>ON POWER TOOL</h3>
                       <div className="text-container">
                         <span className="percentage">30%</span>
                         <span className="label">off</span>
                       </div>
                       <button className="button_buy">Shop Now</button>
                     </div>
+                    <div className="image-content-wrapper">
                     <div className="image-content">
                       <img
                         src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-1.png"
                         alt="Page 1"
                       />
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -433,18 +435,20 @@ const HomePage = () => {
                     <div className="text-content">
                       <p className="slogan">ALL THE PART YOU NEED</p>
                       <span className="tittle">FATMAX J7CS</span>
-                      <h1>JUMP STARTER</h1>
+                      <h3>JUMP STARTER</h3>
                       <div className="text-container">
                         <span className="percentage">50%</span>
                         <span className="label">off</span>
                       </div>
                       <button className="button_buy">Shop Now</button>
                     </div>
+                    <div className="image-content-wrapper">
                     <div className="image-content">
                       <img
                         src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-2.png"
                         alt="Page 2"
                       />
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -453,18 +457,20 @@ const HomePage = () => {
                     <div className="text-content">
                       <p className="slogan">ALL THE PART YOU NEED</p>
                       <span className="tittle">33-POCKET 16 IN</span>
-                      <h1>BIG TOOL BAG</h1>
+                      <h3>BIG TOOL BAG</h3>
                       <div className="text-container">
                         <span className="percentage">25%</span>
                         <span className="label">off</span>
                       </div>
                       <button className="button_buy">Shop Now</button>
                     </div>
+                    <div className="image-content-wrapper">
                     <div className="image-content">
                       <img
                         src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-3.png"
                         alt="Page 3"
                       />
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -473,11 +479,13 @@ const HomePage = () => {
             <div className="col-xl-5 right-column">
               <div className="row h-100">
                 <div className="col-12 right-top">
+                  <div className="image-content-wrapper">
                   <div className="image-content">
                     <img
                       src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-1.jpg"
                       alt="Page 4"
                     />
+                  </div>
                     <div className="text-overlay-container">
                       <div className="text-overlay">$29.99 ONLY</div>
                       <div className="text-overlay">BOSCH</div>
@@ -489,11 +497,13 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-12 right-bottom">
+                  <div className="image-content-wrapper">
                   <div className="image-content">
                     <img
                       src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-2.jpg"
                       alt="Page 5"
                     />
+                  </div>
                     <div className="text-overlay-container">
                       <div className="text-overlay">START FROM $9.99</div>
                       <div className="text-overlay">BRAND</div>

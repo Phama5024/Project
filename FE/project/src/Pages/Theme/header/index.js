@@ -249,7 +249,7 @@ const Header = () => {
               {drawerMenu}
             </Drawer>
           </div>
-          <div className="col-xl-4">
+          <div className="col-xl-5">
             <Search
               className="custom-search"
               placeholder="input search text"
